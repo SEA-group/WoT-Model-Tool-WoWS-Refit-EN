@@ -7,6 +7,9 @@ Please find the build in the [latest release](https://github.com/SEA-group/WoT-M
 
 ## Update history
 
+### 2022.08.12a
+* Added the support of xyznuv2tb vertex type (new shell stream model). Currently we cannot import double uv model due to the limits of the obj format.
+
 ### 2022.03.29a
 * Fixed a bug that causes error when reading models that have more than 65535 vertices.
 

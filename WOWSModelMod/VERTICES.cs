@@ -32,9 +32,14 @@ namespace WOWSModelMod
 			bool skinned = false;
 			bool wire = false;
 			bool alpha = false;
-			if (header[6] == 105)
+			bool uv2 = false;
+			if (header[6] == 50)    // check if the 7th letter is "2" behind "uv"
+            {
+				uv2 = true;
+            }
+			if (header[6] == 105)	// check if the 7th letter is "iiiww"
 			{
-				if (header[11] == 0)
+				if (header[11] == 0)	// check if "tb" exists after "iiiww"
                 {
 					skinned = true;
 					alpha = true;
@@ -44,17 +49,17 @@ namespace WOWSModelMod
 					skinned = true;
 				}	
 			}
-			if (header[6] == 114)
+			if (header[6] == 114)	// check if the 7th letter is "tb"
 			{
 				wire = true;
 			}
-			if (header[6] == 0)
+			if (header[6] == 0)		// check if the header ends at "xyznuv"
 			{
 				alpha = true;
 			}
 			for (int i = 0; i < num; i++)
 			{
-				vts[i] = new VERTS(binaryReader, skinned, alpha, wire);
+				vts[i] = new VERTS(binaryReader, skinned, alpha, wire, uv2);
 			}
 			binaryReader.Close();
 		}
@@ -96,9 +101,11 @@ namespace WOWSModelMod
 				{
 					array[i].vert = nvts[i].vert;
 					array[i].tvert = nvts[i].tvert;
+					array[i].tvert2 = nvts[i].tvert2;
 					array[i].normal = nvts[i].normal;
 					array[i].tangent = nvts[i].tangent;
 					array[i].binormal = nvts[i].binormal;
+					array[i].radius = nvts[i].radius;
 				}
 				spvts.Insert(Chunkid, array);
 			}
@@ -110,6 +117,11 @@ namespace WOWSModelMod
 			bool wire = false;
 			bool alpha = false;
 			bool skinned = false;
+			bool uv2 = false;
+			if (header[6] == 50)
+			{
+				uv2 = true;
+			}
 			if (header[6] == 105)
 			{
 				if (header[11] == 0)
@@ -140,12 +152,12 @@ namespace WOWSModelMod
 			{
 				for (int k = 0; k < spvts[j].Length; k++)
 				{
-					spvts[j][k].Write(w, skinned, alpha, wire);
+					spvts[j][k].Write(w, skinned, alpha, wire, uv2);
 				}
 			}
 		}
 
-		public byte[] GetData()
+        public byte[] GetData()
 		{
 			MemoryStream memoryStream = new MemoryStream();
 			BinaryWriter binaryWriter = new BinaryWriter(memoryStream);

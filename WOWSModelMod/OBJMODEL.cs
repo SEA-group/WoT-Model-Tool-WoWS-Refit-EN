@@ -146,6 +146,7 @@ namespace WOWSModelMod
 					item7.binormal = default(VT3);
 					item7.tangent = default(VT3);
 					item7.tvert = list3[list5[j].x];
+					item7.tvert2 = list3[list5[j].x];
 					item7.vert = list[list4[j].x];
 					item7.normal = list2[list6[j].x];
 					dictionary2.Add(key, ots.Count);
@@ -164,6 +165,7 @@ namespace WOWSModelMod
 					item8.binormal = default(VT3);
 					item8.tangent = default(VT3);
 					item8.tvert = list3[list5[j].y];
+					item8.tvert2 = list3[list5[j].y];
 					item8.vert = list[list4[j].y];
 					item8.normal = list2[list6[j].y];
 					dictionary2.Add(key, ots.Count);
@@ -182,6 +184,7 @@ namespace WOWSModelMod
 					item9.binormal = default(VT3);
 					item9.tangent = default(VT3);
 					item9.tvert = list3[list5[j].z];
+					item9.tvert2 = list3[list5[j].z];
 					item9.vert = list[list4[j].z];
 					item9.normal = list2[list6[j].z];
 					dictionary2.Add(key, ots.Count);
@@ -278,6 +281,7 @@ namespace WOWSModelMod
 				item7.binormal = default(VT3);
 				item7.tangent = default(VT3);
 				item7.tvert = list3[i];
+				item7.tvert2 = list3[i];
 				item7.vert = list[i];
 				item7.normal = list2[i];
 				ots.Add(item7);
