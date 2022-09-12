@@ -150,7 +150,7 @@ namespace WOWSModelMod
 				vert.Write(w);
 				normal.Write(w);
 				tvert.Write(w);
-                float tempNumAsRadius = 0.9991f;
+                float tempNumAsRadius = 0.002f;
 				w.Write(tempNumAsRadius);
 			}
             else

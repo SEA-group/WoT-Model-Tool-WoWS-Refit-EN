@@ -7,6 +7,9 @@ Please find the build in the [latest release](https://github.com/SEA-group/WoT-M
 
 ## Update history
 
+### 2022.09.12a
+* Changed default wire radius from 0.991f to 0.002f, intending to fix the shadow issue.
+
 ### 2022.08.12a
 * Added the support of xyznuv2tb vertex type (new shell stream model). Currently we cannot import double uv model due to the limits of the obj format.
 

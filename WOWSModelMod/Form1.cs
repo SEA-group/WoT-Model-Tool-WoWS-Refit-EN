@@ -125,7 +125,7 @@ namespace WOWSModelMod
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(83, 24);
             this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Reverse surface";
+            this.checkBox1.Text = "Flip surface";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // listBox2
@@ -196,7 +196,7 @@ namespace WOWSModelMod
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
-            this.Text = "WoT Model Mod by Lotsbiss | WoWS adaptation by SEA group | build 2022.08.12a";
+            this.Text = "WoT Model Mod by Lotsbiss | WoWS adaptation by SEA group | build 2022.09.12a";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
