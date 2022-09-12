@@ -1,0 +1,14 @@
+H:\URS_files\WOWS Model Mod\bin\Debug\WOTModelMod.exe
+H:\URS_files\WOWS Model Mod\bin\Debug\WOTModelMod.pdb
+H:\URS_files\WOWS Model Mod\bin\Debug\DXRender.dll
+H:\URS_files\WOWS Model Mod\bin\Debug\System.dll
+H:\URS_files\WOWS Model Mod\bin\Debug\System.Drawing.dll
+H:\URS_files\WOWS Model Mod\bin\Debug\System.Windows.Forms.dll
+H:\URS_files\WOWS Model Mod\obj\x86\Debug\WOWS Model Mod.csprojAssemblyReference.cache
+H:\URS_files\WOWS Model Mod\obj\x86\Debug\WOTModelMod.Form1.resources
+H:\URS_files\WOWS Model Mod\obj\x86\Debug\WOTModelMod.MatForm.resources
+H:\URS_files\WOWS Model Mod\obj\x86\Debug\WOWS Model Mod.csproj.GenerateResource.cache
+H:\URS_files\WOWS Model Mod\obj\x86\Debug\WOWS Model Mod.csproj.CoreCompileInputs.cache
+H:\URS_files\WOWS Model Mod\obj\x86\Debug\WOWS Model Mod.csproj.CopyComplete
+H:\URS_files\WOWS Model Mod\obj\x86\Debug\WOTModelMod.exe
+H:\URS_files\WOWS Model Mod\obj\x86\Debug\WOTModelMod.pdb
