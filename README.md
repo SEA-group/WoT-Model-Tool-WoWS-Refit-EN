@@ -7,6 +7,15 @@ Please find the build in the [latest release](https://github.com/SEA-group/WoT-M
 
 ## Update history
 
+### 2022.03.29a
+* Fixed a bug that causes error when reading models that have more than 65535 vertices.
+
+### 2020.12.09a
+* Changed a modern icon
+
+### 2020.11.03a
+* Rebuilt the function for calculating tangent and binormal for smoothen mesh. Effect not obvious.
+
 ### 2020.09.15b
 * Added app icon
 
@@ -14,7 +23,7 @@ Please find the build in the [latest release](https://github.com/SEA-group/WoT-M
 * Added the support to xyznuviiiww vertex type (skinned model with alpha)
 
 ### 2020.07.14b
-* Tried to fix the previous bug that cause list32 cannot be modified twice. The fix is likely working but I still feel that something's wrong...
+* Tried to fix the previous bug that causes list32 cannot be modified twice. The fix is likely working but I still feel that something's wrong...
 * **Meanwhile, the list32 models modified with 2020.07.14a cannot be read by 2020.07.14b**
 
 ### 2020.07.14a

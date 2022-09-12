@@ -70,19 +70,21 @@ namespace WOWSModelMod
             this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 12;
-            this.listBox1.Location = new System.Drawing.Point(10, 12);
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(13, 16);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(326, 208);
+            this.listBox1.Size = new System.Drawing.Size(433, 276);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(506, 197);
+            this.button1.Location = new System.Drawing.Point(675, 263);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 31);
             this.button1.TabIndex = 1;
             this.button1.Text = "Export";
             this.button1.UseVisualStyleBackColor = true;
@@ -92,16 +94,18 @@ namespace WOWSModelMod
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(344, 12);
+            this.textBox1.Location = new System.Drawing.Point(459, 16);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(509, 21);
+            this.textBox1.Size = new System.Drawing.Size(677, 22);
             this.textBox1.TabIndex = 2;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(425, 197);
+            this.button2.Location = new System.Drawing.Point(567, 263);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(100, 31);
             this.button2.TabIndex = 3;
             this.button2.Text = "Replace";
             this.button2.UseVisualStyleBackColor = true;
@@ -110,9 +114,10 @@ namespace WOWSModelMod
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button3.Location = new System.Drawing.Point(776, 68);
+            this.button3.Location = new System.Drawing.Point(1035, 91);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(100, 31);
             this.button3.TabIndex = 4;
             this.button3.Text = "Save copy";
             this.button3.UseVisualStyleBackColor = true;
@@ -121,9 +126,10 @@ namespace WOWSModelMod
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(668, 43);
+            this.checkBox1.Location = new System.Drawing.Point(891, 58);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(60, 16);
+            this.checkBox1.Size = new System.Drawing.Size(103, 21);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Invert faces";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -133,18 +139,20 @@ namespace WOWSModelMod
             this.listBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 12;
-            this.listBox2.Location = new System.Drawing.Point(344, 39);
+            this.listBox2.ItemHeight = 16;
+            this.listBox2.Location = new System.Drawing.Point(459, 52);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(4);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(318, 148);
+            this.listBox2.Size = new System.Drawing.Size(423, 196);
             this.listBox2.TabIndex = 6;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox2_SelectedIndexChanged);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(344, 197);
+            this.button4.Location = new System.Drawing.Point(459, 263);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(100, 31);
             this.button4.TabIndex = 7;
             this.button4.Text = "Add";
             this.button4.UseVisualStyleBackColor = true;
@@ -152,9 +160,10 @@ namespace WOWSModelMod
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(587, 197);
+            this.button5.Location = new System.Drawing.Point(783, 263);
+            this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(100, 31);
             this.button5.TabIndex = 8;
             this.button5.Text = "Remove";
             this.button5.UseVisualStyleBackColor = true;
@@ -163,9 +172,10 @@ namespace WOWSModelMod
             // button6
             // 
             this.button6.Enabled = false;
-            this.button6.Location = new System.Drawing.Point(776, 197);
+            this.button6.Location = new System.Drawing.Point(1035, 263);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(100, 31);
             this.button6.TabIndex = 9;
             this.button6.Text = "Material";
             this.button6.UseVisualStyleBackColor = true;
@@ -173,9 +183,10 @@ namespace WOWSModelMod
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(776, 39);
+            this.button7.Location = new System.Drawing.Point(1035, 52);
+            this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.Size = new System.Drawing.Size(100, 31);
             this.button7.TabIndex = 10;
             this.button7.Text = "Save";
             this.button7.UseVisualStyleBackColor = true;
@@ -184,9 +195,10 @@ namespace WOWSModelMod
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(668, 72);
+            this.checkBox2.Location = new System.Drawing.Point(891, 97);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(84, 16);
+            this.checkBox2.Size = new System.Drawing.Size(111, 21);
             this.checkBox2.TabIndex = 11;
             this.checkBox2.Text = "Vertices only";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -194,10 +206,10 @@ namespace WOWSModelMod
             // Form1
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(864, 235);
+            this.ClientSize = new System.Drawing.Size(1152, 307);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
@@ -210,10 +222,13 @@ namespace WOWSModelMod
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
+            this.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "WoT Model Mod by Lotsbiss, WoWS adaptation by SEA group, build 20.09.15a";
+            this.Text = "WoT Model Mod by Lotsbiss, WoWS adaptation by SEA group, build 22.03.29a";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
             this.ResumeLayout(false);
@@ -415,5 +430,10 @@ namespace WOWSModelMod
 				curPrims.SaveUp();
 			}
 		}
-	}
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

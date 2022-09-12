@@ -107,17 +107,17 @@ namespace WOWSModelMod
 				else if (array[0] == "f")
 				{
 					string[] array2 = array[1].Split(separator2, StringSplitOptions.RemoveEmptyEntries);
-					item4.x = Convert.ToUInt16(array2[0]) - 1;
-					item5.x = Convert.ToUInt16(array2[1]) - 1;
-					item6.x = Convert.ToUInt16(array2[2]) - 1;
+					item4.x = int.Parse(array2[0]) - 1;
+					item5.x = int.Parse(array2[1]) - 1;
+					item6.x = int.Parse(array2[2]) - 1;
 					array2 = array[2].Split(separator2, StringSplitOptions.RemoveEmptyEntries);
-					item4.y = Convert.ToUInt16(array2[0]) - 1;
-					item5.y = Convert.ToUInt16(array2[1]) - 1;
-					item6.y = Convert.ToUInt16(array2[2]) - 1;
+					item4.y = int.Parse(array2[0]) - 1;
+					item5.y = int.Parse(array2[1]) - 1;
+					item6.y = int.Parse(array2[2]) - 1;
 					array2 = array[3].Split(separator2, StringSplitOptions.RemoveEmptyEntries);
-					item4.z = Convert.ToUInt16(array2[0]) - 1;
-					item5.z = Convert.ToUInt16(array2[1]) - 1;
-					item6.z = Convert.ToUInt16(array2[2]) - 1;
+					item4.z = int.Parse(array2[0]) - 1;
+					item5.z = int.Parse(array2[1]) - 1;
+					item6.z = int.Parse(array2[2]) - 1;
 					dictionary.Add(list4.Count, text);
 					list4.Add(item4);
 					list5.Add(item5);
@@ -285,19 +285,60 @@ namespace WOWSModelMod
 			ofdx.AddRange(list4.ToArray());
 		}
 
-		private VT3 GenTangent(VT3 v1, VT3 v2, VT2 st1, VT2 st2, VT3 norm)
+		//private VT3 GenTangent(VT3 v1, VT3 v2, VT2 st1, VT2 st2)
+		//{
+		//	float num = st1.x * st2.y - st2.x * st1.y;
+		//	if (num != 0f)
+		//	{
+		//		num = 1f / num;
+		//	}
+		//	VT3 result = default(VT3);
+		//	result.x = num * (v1.x * st2.y + v2.x * (0f - st1.y));
+		//	result.y = num * (v1.y * st2.y + v2.y * (0f - st1.y));
+		//	result.z = num * (v1.z * st2.y + v2.z * (0f - st1.y));
+		//	return result;
+		//}
+
+		private VT3 GenTangentPro(VT3 v1, VT3 v2, VT3 v3, VT2 st12, VT2 st13, VT3 norm)
 		{
-			float num = st1.x * st2.y - st2.x * st1.y;
-			if (num != 0f)
+			float num1 = norm.x + norm.y + norm.z;
+			if (num1 != 0f)
 			{
-				num = 1f / num;
+				num1 = 1f / num1;
+			}
+			float t12 = num1 * (norm.x * (v1.x - v2.x) + norm.y * (v1.y - v2.y) + norm.z * (v1.z - v2.z));
+			float v2px = v2.x + t12 * norm.x;
+			float v2py = v2.y + t12 * norm.y;
+			float v2pz = v2.z + t12 * norm.z;
+			float t13 = num1 * (norm.x * (v1.x - v3.x) + norm.y * (v1.y - v3.y) + norm.z * (v1.z - v3.z));
+			float v3px = v3.x + t13 * norm.x;
+			float v3py = v3.y + t13 * norm.y;
+			float v3pz = v3.z + t13 * norm.z;
+			float num2 = st12.x * st13.y - st13.x * st12.y;
+			if (num2 != 0f)
+			{
+				num2 = 1f / num2;
 			}
 			VT3 result = default(VT3);
-			result.x = num * (v1.x * st2.y + v2.x * (0f - st1.y));
-			result.y = num * (v1.y * st2.y + v2.y * (0f - st1.y));
-			result.z = num * (v1.z * st2.y + v2.z * (0f - st1.y));
+			result.x = num2 * ((v2px - v1.x) * st13.y + (v3px - v1.x) * (0f - st12.y));
+			result.y = num2 * ((v2py - v1.y) * st13.y + (v3py - v1.y) * (0f - st12.y));
+			result.z = num2 * ((v2pz - v1.z) * st13.y + (v3pz - v1.z) * (0f - st12.y));
 			return result;
 		}
+
+		//private VT3 GenBinormal(VT3 v1, VT3 v2, VT2 st1, VT2 st2)
+		//{
+		//	float num = st1.x * st2.y - st2.x * st1.y;
+		//	if (num != 0f)
+		//	{
+		//		num = 1f / num;
+		//	}
+		//	VT3 result = default(VT3);
+		//	result.x = num * (v1.x * (0f - st2.x) + v2.x * st1.x);
+		//	result.y = num * (v1.y * (0f - st2.x) + v2.y * st1.x);
+		//	result.z = num * (v1.z * (0f - st2.x) + v2.z * st1.x);
+		//	return result;
+		//}
 
 		private VERTS[] GenTBN()
 		{
@@ -310,22 +351,28 @@ namespace WOWSModelMod
 				VT3 vert3 = array[array2[i].z].vert;
 				VT2 tvert = array[array2[i].x].tvert;
 				VT2 tvert2 = array[array2[i].y].tvert;
-				VT2 tvert3 = array[array2[i].z].tvert;
-				VT3 normal = array[array2[i].x].normal;
-				VT3 normal2 = array[array2[i].y].normal;
-				VT3 normal3 = array[array2[i].z].normal;
-				array[array2[i].x].tangent += GenTangent(vert2 - vert, vert3 - vert, tvert2 - tvert, tvert3 - tvert, normal);
-				array[array2[i].y].tangent += GenTangent(vert3 - vert2, vert - vert2, tvert3 - tvert2, tvert - tvert2, normal2);
-				array[array2[i].z].tangent += GenTangent(vert - vert3, vert2 - vert3, tvert - tvert3, tvert2 - tvert3, normal3);
+                VT2 tvert3 = array[array2[i].z].tvert;
+                VT3 normal = array[array2[i].x].normal;
+                VT3 normal2 = array[array2[i].y].normal;
+                VT3 normal3 = array[array2[i].z].normal;
+				//array[array2[i].x].tangent += GenTangent(vert2 - vert, vert3 - vert, tvert2 - tvert, tvert3 - tvert);
+				//array[array2[i].y].tangent += GenTangent(vert3 - vert2, vert - vert2, tvert3 - tvert2, tvert - tvert2);
+				//array[array2[i].z].tangent += GenTangent(vert - vert3, vert2 - vert3, tvert - tvert3, tvert2 - tvert3);
+				array[array2[i].x].tangent += GenTangentPro(vert, vert2, vert3, tvert2 - tvert, tvert3 - tvert, normal);
+				array[array2[i].y].tangent += GenTangentPro(vert2, vert3, vert, tvert3 - tvert2, tvert - tvert2, normal2);
+				array[array2[i].z].tangent += GenTangentPro(vert3, vert, vert2, tvert - tvert3, tvert2 - tvert3, normal3);
+				//array[array2[i].x].binormal += GenBinormal(vert2 - vert, vert3 - vert, tvert2 - tvert, tvert3 - tvert);
+				//array[array2[i].y].binormal += GenBinormal(vert3 - vert2, vert - vert2, tvert3 - tvert2, tvert - tvert2);
+				//array[array2[i].z].binormal += GenBinormal(vert - vert3, vert2 - vert3, tvert - tvert3, tvert2 - tvert3);
 			}
-			for (int j = 0; j < ots.Count; j++)
-			{
-				array[j].normal.Normalize();
-				array[j].tangent.Normalize();
-				array[j].binormal = array[j].normal.Cross(array[j].tangent);
-				array[j].binormal.Normalize();
-			}
-			return array;
+            for (int j = 0; j < ots.Count; j++)
+            {
+                array[j].normal.Normalize();
+                array[j].tangent.Normalize();
+                array[j].binormal = array[j].normal.Cross(array[j].tangent);
+                array[j].binormal.Normalize();
+            }
+            return array;
 		}
 
 		public void LoadFromMem(VERTS[] vts, FIDX[] fdx)
