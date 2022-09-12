@@ -123,9 +123,9 @@ namespace WOTModelMod
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(668, 43);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(102, 16);
+            this.checkBox1.Size = new System.Drawing.Size(60, 16);
             this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Reverse faces";
+            this.checkBox1.Text = "Invert faces";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // listBox2
@@ -156,7 +156,7 @@ namespace WOTModelMod
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 8;
-            this.button5.Text = "Delete";
+            this.button5.Text = "Remove";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -186,7 +186,7 @@ namespace WOTModelMod
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(668, 72);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(102, 16);
+            this.checkBox2.Size = new System.Drawing.Size(84, 16);
             this.checkBox2.TabIndex = 11;
             this.checkBox2.Text = "Vertices only";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -213,7 +213,7 @@ namespace WOTModelMod
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "WoT Model Mod by Lotsbiss, WoWS adaptation by SEA group";
+            this.Text = "WoT Model Mod by Lotsbiss, WoWS adaptation by SEA group, build 20.07.14b";
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Form1_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Form1_DragEnter);
             this.ResumeLayout(false);
@@ -295,7 +295,7 @@ namespace WOTModelMod
 			}
 			else
 			{
-				MessageBox.Show("Select primitive to export");
+				MessageBox.Show("Select primitive group to export");
 			}
 		}
 
@@ -319,7 +319,7 @@ namespace WOTModelMod
 			}
 			else if (listBox1.Items.Count > 0 && listBox1.SelectedIndex == -1)
 			{
-				MessageBox.Show("Select primitive to import");
+				MessageBox.Show("Select primitive group to import");
 			}
 		}
 
@@ -370,7 +370,7 @@ namespace WOTModelMod
 			}
 			else if (listBox1.Items.Count > 0 && listBox1.SelectedIndex == -1)
 			{
-				MessageBox.Show("Select primitive to import");
+				MessageBox.Show("Select primitive group to import");
 			}
 		}
 
@@ -382,7 +382,7 @@ namespace WOTModelMod
 			}
 			if (listBox2.Items.Count == 1)
 			{
-				MessageBox.Show("Cannot delete");
+				MessageBox.Show("Unable to remove");
 				return;
 			}
 			curPrims.RemoveObj(listBox1.SelectedIndex, listBox2.SelectedIndex);

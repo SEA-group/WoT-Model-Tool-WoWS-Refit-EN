@@ -33,6 +33,11 @@ namespace WOTModelMod
 			Array.Copy(data, bData, data.Length);
 			BinaryReader binaryReader = new BinaryReader(new MemoryStream(data));
 			header = binaryReader.ReadBytes(64);
+			bool list32 = false;
+			if (header[4] == 51)
+			{
+				list32 = true;
+			}
 			int num = binaryReader.ReadInt32() / 3;
 			GroupNum = binaryReader.ReadInt32();
 			gpis = new List<GROUPINFO>();
@@ -40,7 +45,7 @@ namespace WOTModelMod
 			FIDX[] array = new FIDX[num];
 			for (int i = 0; i < num; i++)
 			{
-				array[i] = new FIDX(binaryReader);
+				array[i] = new FIDX(binaryReader, list32);
 			}
 			int j = 0;
 			int num2 = 0;
@@ -108,6 +113,11 @@ namespace WOTModelMod
 		public void Write(BinaryWriter w)
 		{
 			w.Write(header);
+			bool list32 = false;
+			if (header[4] == 51)
+			{
+				list32 = true;
+			}
 			int num = 0;
 			for (int i = 0; i < GroupNum; i++)
 			{
@@ -117,7 +127,7 @@ namespace WOTModelMod
 			w.Write(GroupNum);
 			for (int j = 0; j < GroupNum; j++)
 			{
-				gpis[j].WriteFDX(w, fdx[j]);
+				gpis[j].WriteFDX(w, fdx[j], list32);
 			}
 			for (int k = 0; k < GroupNum; k++)
 			{

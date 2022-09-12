@@ -12,3 +12,30 @@ H:\URS_files\WOWS Model Mod\obj\x86\Debug\WOWS Model Mod.csproj.CoreCompileInput
 H:\URS_files\WOWS Model Mod\obj\x86\Debug\WOWS Model Mod.csproj.CopyComplete
 H:\URS_files\WOWS Model Mod\obj\x86\Debug\WOTModelMod.exe
 H:\URS_files\WOWS Model Mod\obj\x86\Debug\WOTModelMod.pdb
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\bin\Debug\WOTModelMod.exe
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\bin\Debug\WOTModelMod.pdb
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\bin\Debug\DXRender.dll
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\bin\Debug\System.dll
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\bin\Debug\System.Drawing.dll
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\bin\Debug\System.Windows.Forms.dll
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\obj\x86\Debug\WOWS Model Mod.csprojAssemblyReference.cache
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\obj\x86\Debug\WOTModelMod.Form1.resources
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\obj\x86\Debug\WOTModelMod.MatForm.resources
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\obj\x86\Debug\WOWS Model Mod.csproj.GenerateResource.cache
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\obj\x86\Debug\WOWS Model Mod.csproj.CoreCompileInputs.cache
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\obj\x86\Debug\WOWS Model Mod.csproj.CopyComplete
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\obj\x86\Debug\WOTModelMod.exe
+E:\Documents\Documents\WoWS mod\WoTModelMod\WOWS Model Mod\obj\x86\Debug\WOTModelMod.pdb
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\bin\Debug\WOTModelMod.exe
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\bin\Debug\WOTModelMod.pdb
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\bin\Debug\DXRender.dll
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\bin\Debug\System.dll
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\bin\Debug\System.Drawing.dll
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\bin\Debug\System.Windows.Forms.dll
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Debug\WOTModelMod.Form1.resources
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Debug\WOTModelMod.MatForm.resources
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Debug\WOWS Model Mod.csproj.GenerateResource.cache
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Debug\WOWS Model Mod.csproj.CoreCompileInputs.cache
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Debug\WOWS Model Mod.csproj.CopyComplete
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Debug\WOTModelMod.exe
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Debug\WOTModelMod.pdb

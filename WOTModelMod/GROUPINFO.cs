@@ -34,11 +34,11 @@ namespace WOTModelMod
 			stidxv = 0;
 		}
 
-		public void WriteFDX(BinaryWriter w, FIDX[] fdxs)
+		public void WriteFDX(BinaryWriter w, FIDX[] fdxs, bool list32)
 		{
 			for (int i = 0; i < faceNum; i++)
 			{
-				fdxs[i].Write(w, stidxv);
+				fdxs[i].Write(w, stidxv, list32);
 			}
 		}
 
