@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <OutputType>WinExe</OutputType>
     <LangVersion>8.0</LangVersion>
-    <AssemblyName>WOTModelMod</AssemblyName>
+    <AssemblyName>WOWSModelMod</AssemblyName>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
@@ -36,7 +36,7 @@
       <HintPath>C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
     </Reference>
     <Reference Include="DXRender">
-      <HintPath>F:\Portable Programs\WOTModelMod\DXRender.dll</HintPath>
+      <HintPath>F:\Portable Programs\WOWSModelMod\DXRender.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing">
       <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
@@ -44,41 +44,41 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WOTModelMod.Properties\Resources.cs" />
-    <Compile Include="WOTModelMod.Properties\Settings.cs" />
-    <Compile Include="WOTModelMod\BinaryReader.cs" />
-    <Compile Include="WOTModelMod\BinaryWriter.cs" />
-    <Compile Include="WOTModelMod\COMMONCHUNK.cs" />
-    <Compile Include="WOTModelMod\FIDX.cs" />
-    <Compile Include="WOTModelMod\Form1.cs">
+    <Compile Include="WOWSModelMod.Properties\Resources.cs" />
+    <Compile Include="WOWSModelMod.Properties\Settings.cs" />
+    <Compile Include="WOWSModelMod\BinaryReader.cs" />
+    <Compile Include="WOWSModelMod\BinaryWriter.cs" />
+    <Compile Include="WOWSModelMod\COMMONCHUNK.cs" />
+    <Compile Include="WOWSModelMod\FIDX.cs" />
+    <Compile Include="WOWSModelMod\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WOTModelMod\GROUPINFO.cs" />
-    <Compile Include="WOTModelMod\INDICES.cs" />
-    <Compile Include="WOTModelMod\IPrimitiveChunk.cs" />
-    <Compile Include="WOTModelMod\MATERIAL.cs" />
-    <Compile Include="WOTModelMod\MatForm.cs">
+    <Compile Include="WOWSModelMod\GROUPINFO.cs" />
+    <Compile Include="WOWSModelMod\INDICES.cs" />
+    <Compile Include="WOWSModelMod\IPrimitiveChunk.cs" />
+    <Compile Include="WOWSModelMod\MATERIAL.cs" />
+    <Compile Include="WOWSModelMod\MatForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WOTModelMod\OBJMODEL.cs" />
-    <Compile Include="WOTModelMod\PRIMITIVES.cs" />
-    <Compile Include="WOTModelMod\Program.cs" />
-    <Compile Include="WOTModelMod\VERTICES.cs" />
-    <Compile Include="WOTModelMod\VERTS.cs" />
-    <Compile Include="WOTModelMod\VT1.cs" />
-    <Compile Include="WOTModelMod\VT2.cs" />
-    <Compile Include="WOTModelMod\VT3.cs" />
+    <Compile Include="WOWSModelMod\OBJMODEL.cs" />
+    <Compile Include="WOWSModelMod\PRIMITIVES.cs" />
+    <Compile Include="WOWSModelMod\Program.cs" />
+    <Compile Include="WOWSModelMod\VERTICES.cs" />
+    <Compile Include="WOWSModelMod\VERTS.cs" />
+    <Compile Include="WOWSModelMod\VT1.cs" />
+    <Compile Include="WOWSModelMod\VT2.cs" />
+    <Compile Include="WOWSModelMod\VT3.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="WOTModelMod\Form1.resx">
+    <EmbeddedResource Include="WOWSModelMod\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WOTModelMod\MatForm.resx">
+    <EmbeddedResource Include="WOWSModelMod\MatForm.resx">
       <DependentUpon>MatForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="WOTModelMod\DXRender.dll" />
+    <Content Include="WOWSModelMod\DXRender.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

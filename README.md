@@ -7,6 +7,12 @@ Please find the build in the [latest release](https://github.com/SEA-group/WoT-M
 
 ## Update history
 
+### 2020.09.15b
+* Added app icon
+
+### 2020.09.15a
+* Added the support to xyznuviiiww vertex type (skinned model with alpha)
+
 ### 2020.07.14b
 * Tried to fix the previous bug that cause list32 cannot be modified twice. The fix is likely working but I still feel that something's wrong...
 * **Meanwhile, the list32 models modified with 2020.07.14a cannot be read by 2020.07.14b**

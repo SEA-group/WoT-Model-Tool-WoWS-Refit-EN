@@ -1,0 +1,14 @@
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\bin\Release\WOWSModelMod.exe
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\bin\Release\WOWSModelMod.pdb
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\bin\Release\DXRender.dll
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\bin\Release\System.dll
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\bin\Release\System.Drawing.dll
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\bin\Release\System.Windows.Forms.dll
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Release\WOWSModelMod.Form1.resources
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Release\WOWSModelMod.MatForm.resources
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Release\WOWS Model Mod.csproj.GenerateResource.cache
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Release\WOWS Model Mod.csproj.CoreCompileInputs.cache
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Release\WOWS Model Mod.csproj.CopyComplete
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Release\WOWSModelMod.exe
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Release\WOWSModelMod.pdb
+E:\Main\Documents\Visual Studio 2019\Projects\WoWS Model Tool\obj\x86\Release\WOWS Model Mod.csprojAssemblyReference.cache
