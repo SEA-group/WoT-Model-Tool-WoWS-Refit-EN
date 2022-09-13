@@ -3,7 +3,7 @@
 **Modified from Lotsbiss's WOT Model Mod. This tool is not supposed to be shared in public.**
 
 ## Download
-Please find the build in the [latest release](https://github.com/SEA-group/WoT-Model-Tool-WoWS-Refit/releases)
+Please find the build in the [latest release](https://github.com/SEA-group/WoT-Model-Tool-WoWS-Refit-EN/releases)
 
 ## Update history
 
